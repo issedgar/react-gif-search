@@ -12,6 +12,7 @@ const useFetchGifs = ( category ) => {
         setIsLoading(false)
     }
 
+    // useEffect: Al usar este Hook, le estamos indicando a React que el componente tiene que hacer algo después de renderizarse
     useEffect(() => {
         getImages();
     }, []);
@@ -22,5 +23,5 @@ const useFetchGifs = ( category ) => {
     };
 }
 
-export default useFetchGifs
+export default useFetchGifs;
 
